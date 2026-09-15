@@ -3,367 +3,1532 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rank SEO | High Authority PBN & Mix Backlink Services</title>
+
+<title>Rank SEO | Premium SEO & Link Building Services</title>
+
+<meta name="description" content="Rank SEO provides premium PBN backlinks, mix backlinks, guest posting and professional SEO link building services.">
 
 <style>
+:root{
+    --black:#050505;
+    --black2:#0d0d0d;
+    --white:#f7f7f7;
+    --yellow:#f5c400;
+    --yellow2:#ffd83d;
+    --gray:#bdbdbd;
+    --card:rgba(255,255,255,.055);
+    --line:rgba(245,196,0,.22);
+}
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#000;
-color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--black);
+    color:var(--white);
+    line-height:1.65;
 }
 
-header{
-padding:80px 20px;
-text-align:center;
-background:linear-gradient(135deg,#000000,#1a1a1a,#d4af37);
+/* BACKGROUND IMAGE
+   Upload your image with the exact name:
+   background.jpg
+*/
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-2;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.82),
+            rgba(0,0,0,.93)
+        ),
+        url("background.jpg") center/cover no-repeat;
 }
 
-h1{
-font-size:50px;
-margin-bottom:15px;
-color:#ffffff;
+body:after{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(245,196,0,.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(245,196,0,.08),
+            transparent 30%
+        );
+
+    animation:glow 8s ease-in-out infinite alternate;
 }
 
-p{
-font-size:20px;
-color:#e5e5e5;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:15px 35px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#f7d774;
-transform:translateY(-3px);
-box-shadow:0 0 15px rgba(212,175,55,.6);
-}
-
-section{
-padding:70px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:#111;
-padding:30px;
-border-radius:12px;
-text-align:center;
-border:1px solid #d4af37;
-box-shadow:0 0 15px rgba(212,175,55,.15);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px rgba(212,175,55,.45);
-}
-
-.card h2{
-margin-bottom:15px;
-color:#d4af37;
-}
-
-.price{
-font-size:38px;
-margin:15px 0;
-color:#fff;
-font-weight:bold;
+@keyframes glow{
+    from{
+        opacity:.45;
+    }
+    to{
+        opacity:1;
+    }
 }
 
 a{
-color:#d4af37;
-text-decoration:none;
+    text-decoration:none;
+    color:inherit;
 }
 
-a:hover{
-color:#fff;
+.container{
+    width:min(1140px,92%);
+    margin:auto;
 }
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+
+    background:rgba(5,5,5,.93);
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--line);
+}
+
+.nav{
+    min-height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    white-space:nowrap;
+}
+
+.logo span{
+    color:var(--yellow);
+}
+
+nav{
+    display:flex;
+    gap:4px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    padding:9px 12px;
+    border-radius:7px;
+
+    color:#ddd;
+    font-size:14px;
+    font-weight:700;
+
+    transition:.25s;
+}
+
+nav a:hover{
+    background:var(--yellow);
+    color:#111;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    background:var(--yellow);
+    color:#111;
+
+    border:1px solid var(--yellow);
+
+    font-weight:900;
+
+    transition:.25s;
+}
+
+.btn:hover{
+    background:var(--yellow2);
+    transform:translateY(-2px);
+}
+
+.btn.dark{
+    background:transparent;
+    color:var(--yellow);
+}
+
+/* HERO */
+
+.hero{
+    min-height:82vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:90px 0;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+
+    gap:45px;
+
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+
+    color:var(--yellow);
+
+    border:1px solid rgba(245,196,0,.45);
+
+    border-radius:999px;
+
+    padding:7px 13px;
+
+    font-size:12px;
+    font-weight:900;
+
+    letter-spacing:.5px;
+
+    margin-bottom:18px;
+}
+
+h1{
+    font-size:clamp(43px,6vw,76px);
+
+    line-height:1.02;
+
+    margin-bottom:20px;
+}
+
+h1 span,
+h2 span,
+h3 span{
+    color:var(--yellow);
+}
+
+.lead{
+    max-width:720px;
+
+    color:#d0d0d0;
+
+    font-size:19px;
+}
+
+.actions{
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-top:28px;
+}
+
+.hero-box,
+.card,
+.price,
+.contact-box{
+
+    background:var(--card);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:18px;
+
+    padding:26px;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 18px 60px rgba(0,0,0,.28);
+}
+
+.hero-box{
+    border-color:rgba(245,196,0,.30);
+}
+
+.hero-box h3{
+    color:var(--yellow);
+
+    font-size:22px;
+
+    margin-bottom:16px;
+}
+
+.check{
+    display:flex;
+
+    gap:11px;
+
+    margin:11px 0;
+
+    color:#ddd;
+}
+
+.check b{
+    color:var(--yellow);
+}
+
+/* SECTIONS */
+
+section{
+    padding:82px 0;
+}
+
+.section-head{
+    max-width:760px;
+
+    margin:0 auto 42px;
+
+    text-align:center;
+}
+
+.section-head h2{
+    font-size:40px;
+
+    line-height:1.15;
+
+    margin-bottom:12px;
+}
+
+.section-head p{
+    color:var(--gray);
+}
+
+.grid3{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.grid2{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+}
+
+.card{
+    transition:.25s;
+}
+
+.card:hover,
+.price:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(245,196,0,.42);
+}
+
+.icon{
+    font-size:30px;
+
+    margin-bottom:8px;
+}
+
+.card h3,
+.price h3{
+
+    font-size:21px;
+
+    margin-bottom:10px;
+}
+
+.card p,
+.price p,
+.price li{
+
+    color:#c5c5c5;
+}
+
+/* PROCESS */
+
+.process-number{
+
+    color:var(--yellow);
+
+    font-size:13px;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+}
+
+/* PRICING */
+
+.price{
+    position:relative;
+}
+
+.price.popular{
+
+    border-color:var(--yellow);
+
+    box-shadow:
+        0 0 35px rgba(245,196,0,.10);
+}
+
+.tag{
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    background:var(--yellow);
+
+    color:#111;
+
+    padding:5px 9px;
+
+    border-radius:999px;
+
+    font-size:10px;
+
+    font-weight:900;
+}
+
+.amount{
+
+    font-size:42px;
+
+    font-weight:900;
+
+    margin:8px 0 18px;
+}
+
+.amount small{
+
+    font-size:13px;
+
+    color:#999;
+}
+
+.price ul{
+
+    padding-left:20px;
+
+    margin-bottom:22px;
+}
+
+.price li{
+
+    margin:8px 0;
+}
+
+/* CTA */
+
+.cta{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(245,196,0,.15),
+            rgba(255,255,255,.035)
+        );
+
+    border-top:1px solid var(--line);
+
+    border-bottom:1px solid var(--line);
+}
+
+/* CONTACT */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+
+.contact-box h3{
+
+    color:var(--yellow);
+
+    margin-bottom:16px;
+
+    font-size:22px;
+}
+
+.contact-item{
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.contact-item:last-child{
+
+    border-bottom:0;
+}
+
+.contact-item strong{
+
+    display:block;
+
+    margin-bottom:3px;
+}
+
+.contact-item a{
+
+    color:var(--yellow);
+
+    font-weight:800;
+}
+
+/* FOOTER */
 
 footer{
-background:#000;
-padding:25px;
-text-align:center;
-color:#d4af37;
-border-top:1px solid #d4af37;
+
+    padding:32px 0;
+
+    border-top:1px solid rgba(255,255,255,.10);
+
+    color:#999;
+}
+
+.footer-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+/* WHATSAPP */
+
+.float-wa{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:80;
+
+    background:#25d366;
+
+    color:#fff;
+
+    padding:12px 16px;
+
+    border-radius:999px;
+
+    font-weight:900;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .nav{
+
+        flex-direction:column;
+
+        padding:14px 0;
+    }
+
+    .hero-grid,
+    .grid3,
+    .grid2,
+    .contact-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+
+        padding:70px 0;
+    }
+
+    .nav>.btn{
+
+        display:none;
+    }
+}
+
+@media(max-width:600px){
+
+    nav a{
+
+        font-size:12px;
+
+        padding:7px 8px;
+    }
+
+    section{
+
+        padding:62px 0;
+    }
+
+    h1{
+
+        font-size:45px;
+    }
+
+    .section-head h2{
+
+        font-size:32px;
+    }
+
+    .float-wa{
+
+        right:12px;
+
+        bottom:12px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Premium PBN Backlinks</h1>
-<p>Boost Your Google Rankings with High Authority PBN Links</p>
+<!-- ================= HEADER ================= -->
 
-<a class="btn" href="#pricing">View Packages</a>
+<header>
+
+<div class="container nav">
+
+<a class="logo" href="#home">
+Rank <span>SEO</span>
+</a>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#pricing">Pricing</a>
+
+<a href="#packages">Packages</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<a class="btn" href="#contact">
+Get Started
+</a>
+
+</div>
+
 </header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="badge">
+PREMIUM SEO & LINK BUILDING
+</span>
+
+<h1>
+Build Authority.<br>
+<span>Rank Higher.</span>
+</h1>
+
+<p class="lead">
+
+Rank SEO provides professional backlink,
+guest posting, PBN and mix link building
+services to help websites build authority
+and improve online visibility.
+
+</p>
+
+<div class="actions">
+
+<a class="btn" href="#packages">
+View Packages
+</a>
+
+<a class="btn dark" href="#contact">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-box">
+
+<h3>
+Why Choose Rank SEO?
+</h3>
+
+<div class="check">
+<b>✓</b>
+<span>Quality-focused link building</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Guest Post & PBN services</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Mix backlink campaigns</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Detailed work reports</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Professional support</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+About <span>Rank SEO</span>
+</h2>
+
+<p>
+Professional SEO link building focused on authority,
+quality and clear reporting.
+</p>
+
+</div>
+
+
+<div class="grid2">
+
+<div class="card">
+
+<div class="icon">🚀</div>
+
+<h3>
+Who We Are
+</h3>
+
+<p>
+
+Rank SEO is a digital marketing and
+link-building service specializing in
+PBN backlinks, guest posts, mix backlinks
+and other SEO link-building solutions.
+
+</p>
+
+<br>
+
+<p>
+
+We work with website owners, agencies
+and businesses that need organized
+backlink campaigns and professional delivery.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎯</div>
+
+<h3>
+Our Focus
+</h3>
+
+<div class="check">
+<b>01</b>
+<span>Quality-focused backlinks</span>
+</div>
+
+<div class="check">
+<b>02</b>
+<span>Relevant contextual opportunities</span>
+</div>
+
+<div class="check">
+<b>03</b>
+<span>Clear communication</span>
+</div>
+
+<div class="check">
+<b>04</b>
+<span>Detailed completed-work reports</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+Our <span>Services</span>
+</h2>
+
+<p>
+Choose the link-building service that
+fits your SEO campaign.
+</p>
+
+</div>
+
+
+<div class="grid3">
+
+
+<div class="card">
+
+<div class="icon">🔗</div>
+
+<h3>
+PBN Backlinks
+</h3>
+
+<p>
+High-authority PBN backlink campaigns
+with organized delivery and reporting.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">✍️</div>
+
+<h3>
+Guest Posting
+</h3>
+
+<p>
+Contextual guest post links placed
+through publishing opportunities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📈</div>
+
+<h3>
+Mix Backlinks
+</h3>
+
+<p>
+Profile, Web 2.0, directory, article,
+wiki and social link combinations.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">👤</div>
+
+<h3>
+Profile Backlinks
+</h3>
+
+<p>
+Profile link building for broader
+backlink diversification.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>
+Web 2.0 Links
+</h3>
+
+<p>
+Web 2.0 properties and supporting
+links for diversified campaigns.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📄</div>
+
+<h3>
+Article Submission
+</h3>
+
+<p>
+Article-based backlink opportunities
+included in selected packages.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+How <span>It Works</span>
+</h2>
+
+<p>
+A simple process from order to final report.
+</p>
+
+</div>
+
+
+<div class="grid3">
+
+
+<div class="card">
+
+<div class="process-number">
+STEP 01
+</div>
+
+<h3>
+Choose a Package
+</h3>
+
+<p>
+Select a package or contact us
+for a custom campaign.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="process-number">
+STEP 02
+</div>
+
+<h3>
+Send Your Details
+</h3>
+
+<p>
+Send your website URL and
+campaign requirements.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="process-number">
+STEP 03
+</div>
+
+<h3>
+Receive Report
+</h3>
+
+<p>
+After completion, receive the
+backlink work report.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRICING ================= -->
 
 <section id="pricing">
 
-<h1 style="text-align:center;margin-bottom:40px;">Premium PBN Packages</h1>
+<div class="container">
 
-<div class="cards">
+<div class="section-head">
 
-<div class="card">
-<h2>Basic</h2>
-<div class="price">$49</div>
-<p>60 High DA PBN Backlinks</p>
-<a class="btn" href="#contact">Order Now</a>
+<h2>
+Simple <span>Pricing</span>
+</h2>
+
+<p>
+Popular PBN packages with clear pricing.
+</p>
+
 </div>
 
-<div class="card">
-<h2>Standard</h2>
-<div class="price">$99</div>
-<p>125 High DA PBN Backlinks</p>
-<a class="btn" href="#contact">Order Now</a>
+
+<div class="grid3">
+
+
+<div class="price">
+
+<h3>
+PBN Starter
+</h3>
+
+<div class="amount">
+$49
+<small>/ package</small>
 </div>
 
-<div class="card">
-<h2>Premium</h2>
-<div class="price">$199</div>
-<p>180 High DA PBN Backlinks</p>
-<a class="btn" href="#contact">Order Now</a>
+<ul>
+
+<li>60 High DA PBN Backlinks</li>
+
+<li>Basic backlink report</li>
+
+<li>Professional delivery</li>
+
+</ul>
+
+<a class="btn" href="#contact">
+Order Now
+</a>
+
+</div>
+
+
+<div class="price popular">
+
+<span class="tag">
+MOST POPULAR
+</span>
+
+<h3>
+Professional
+</h3>
+
+<div class="amount">
+$99
+<small>/ package</small>
+</div>
+
+<ul>
+
+<li>125 High DA PBN Backlinks</li>
+
+<li>Detailed backlink report</li>
+
+<li>Professional delivery</li>
+
+</ul>
+
+<a class="btn" href="#contact">
+Order Now
+</a>
+
+</div>
+
+
+<div class="price">
+
+<h3>
+Agency
+</h3>
+
+<div class="amount">
+$199
+<small>/ package</small>
+</div>
+
+<ul>
+
+<li>180 High DA PBN Backlinks</li>
+
+<li>Detailed SEO report</li>
+
+<li>Priority support</li>
+
+</ul>
+
+<a class="btn" href="#contact">
+Order Now
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section id="packages">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+SEO <span>Packages</span>
+</h2>
+
+<p>
+Mix backlink options for different campaign sizes.
+</p>
+
+</div>
+
+
+<div class="grid3">
+
+
+<div class="price">
+
+<h3>
+Mix Basic
+</h3>
+
+<div class="amount">
+$70
+</div>
+
+<ul>
+
+<li>Profile Backlinks</li>
+
+<li>Web 2.0 Links</li>
+
+<li>Directory Links</li>
+
+<li>Social Bookmarking</li>
+
+<li>Image Sharing</li>
+
+<li>3–5 Days Delivery</li>
+
+</ul>
+
+<a class="btn" href="#contact">
+Order Now
+</a>
+
+</div>
+
+
+<div class="price">
+
+<h3>
+Mix Standard
+</h3>
+
+<div class="amount">
+$120
+</div>
+
+<ul>
+
+<li>High DA Profile Links</li>
+
+<li>Article Submission</li>
+
+<li>Web 2.0 Backlinks</li>
+
+<li>Directory Submissions</li>
+
+<li>Wiki Backlinks</li>
+
+<li>5–7 Days Delivery</li>
+
+</ul>
+
+<a class="btn" href="#contact">
+Order Now
+</a>
+
+</div>
+
+
+<div class="price popular">
+
+<span class="tag">
+BEST VALUE
+</span>
+
+<h3>
+Mix Premium
+</h3>
+
+<div class="amount">
+$150
+</div>
+
+<ul>
+
+<li>High DA Profile Backlinks</li>
+
+<li>Article Submissions</li>
+
+<li>Premium Web 2.0</li>
+
+<li>Directory Submissions</li>
+
+<li>Wiki Backlinks</li>
+
+<li>EDU Backlinks</li>
+
+<li>PDF Sharing</li>
+
+<li>Social Bookmarking</li>
+
+<li>Image Sharing</li>
+
+<li>Full SEO Report</li>
+
+<li>7–10 Days Delivery</li>
+
+</ul>
+
+<a class="btn" href="#contact">
+Order Now
+</a>
+
+</div>
+
+
 </div>
 
 </div>
 
 </section>
 
-<section id="mix-backlinks">
 
-<h1 style="text-align:center;margin-bottom:40px;">Mix Backlinks Packages</h1>
+<!-- ================= CTA ================= -->
 
-<div class="cards">
+<section class="cta">
 
-<div class="card">
-<h2>🥉 Basic </h2>
-<div class="price">$70</div>
+<div class="container">
 
-<p> 50 High DA Profile Backlinks</p>
-<p> 20 Web 2.0 Backlinks</p>
-<p> 20 Directory Submissions</p>
-<p> 20 Social Bookmarking Links</p>
-<p> 10 Image Sharing Links</p>
-<p> Delivery: 3–5 Days</p>
+<div class="section-head">
 
-<a class="btn" href="#contact">Order Now</a>
-</div>
+<h2>
+Need a <span>Custom Package?</span>
+</h2>
 
-<div class="card">
-<h2>🥈 Standard </h2>
-<div class="price">$120</div>
+<p>
+Tell us your website, required links
+and budget. We can discuss a custom campaign.
+</p>
 
-<p> 100 High DA Profile Backlinks</p>
-<p> 50 Article Submission Links</p>
-<p> 30 Web 2.0 Backlinks</p>
-<p> 50 Directory Submissions</p>
-<p> 30 Wiki Backlinks</p>
-<p> 20 Social Bookmarking Links</p>
-<p> 20 Image Sharing Links</p>
-<p> Delivery: 5–7 Days</p>
+<br>
 
-<a class="btn" href="#contact">Order Now</a>
-</div>
+<a class="btn" href="#contact">
+Request Custom Package
+</a>
 
-<div class="card">
-<h2>👑 Premium </h2>
-<div class="price">$150</div>
-
-<p> 200 High DA Profile Backlinks</p>
-<p> 100 Article Submission Links</p>
-<p> 50 Web 2.0 Properties</p>
-<p> 100 Directory Submissions</p>
-<p> 50 Wiki Backlinks</p>
-<p> 20 EDU Backlinks</p>
-<p> 20 PDF Sharing Backlinks</p>
-<p> 30 Social Bookmarking Links</p>
-<p> 30 Image Sharing Links</p>
-<p> Full SEO Report</p>
-<p> Delivery: 7–10 Days</p>
-
-<a class="btn" href="#contact">Order Now</a>
 </div>
 
 </div>
 
 </section>
-<section id="why-us">
 
-<h1 style="text-align:center;margin-bottom:40px;">Why Choose Rank SEO?</h1>
 
-<div class="cards">
+<!-- ================= CONTACT ================= -->
 
-<div class="card">
-<h2>🚀 High Authority Links</h2>
-<p>We build quality backlinks from trusted and high authority websites.</p>
+<section id="contact">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>
+Contact <span>Rank SEO</span>
+</h2>
+
+<p>
+Choose any contact method below and
+send your website URL with your requirements.
+</p>
+
 </div>
 
-<div class="card">
-<h2>📈 Improve Rankings</h2>
-<p>Our backlinks help improve your website's search engine visibility.</p>
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<h3>
+Get In Touch
+</h3>
+
+
+<div class="contact-item">
+
+<strong>
+📱 WhatsApp
+</strong>
+
+<a
+href="https://wa.me/923409843554"
+target="_blank">
+
++92 340 9843554
+
+</a>
+
 </div>
 
-<div class="card">
-<h2>⚡ Fast Delivery</h2>
-<p>All projects are completed within the promised delivery time.</p>
+
+<div class="contact-item">
+
+<strong>
+✈️ Telegram
+</strong>
+
+<a
+href="https://t.me/Rankseo275"
+target="_blank">
+
+@Rankseo275
+
+</a>
+
 </div>
 
-<div class="card">
-<h2>📊 Detailed Report</h2>
-<p>Every order includes a complete backlink report.</p>
+
+<div class="contact-item">
+
+<strong>
+📧 Email
+</strong>
+
+<a
+href="mailto:masterseoranker@gmail.com">
+
+masterseoranker@gmail.com
+
+</a>
+
 </div>
 
-<div class="card">
-<h2>💯 Manual Work</h2>
-<p>No spam or automated software. Everything is done manually.</p>
+
 </div>
 
-<div class="card">
-<h2>🛡 Safe SEO</h2>
-<p>Google-friendly backlink strategies for long-term results.</p>
+
+<div class="contact-box">
+
+<h3>
+Quick Order
+</h3>
+
+<p style="color:#bbb;margin-bottom:15px">
+
+For a faster response, send:
+
+</p>
+
+
+<div class="check">
+<b>1.</b>
+<span>Your website URL</span>
+</div>
+
+<div class="check">
+<b>2.</b>
+<span>Package or service name</span>
+</div>
+
+<div class="check">
+<b>3.</b>
+<span>Target country / niche</span>
+</div>
+
+<div class="check">
+<b>4.</b>
+<span>Any special requirements</span>
+</div>
+
+
+<div class="actions">
+
+<a
+class="btn"
+href="https://wa.me/923409843554?text=Hello%20Rank%20SEO%2C%20I%20want%20to%20order%20an%20SEO%20package."
+target="_blank">
+
+WhatsApp
+
+</a>
+
+
+<a
+class="btn dark"
+href="https://t.me/Rankseo275"
+target="_blank">
+
+Telegram
+
+</a>
+
+
+<a
+class="btn dark"
+href="mailto:masterseoranker@gmail.com">
+
+Email
+
+</a>
+
+</div>
+
+
+</div>
+
 </div>
 
 </div>
 
 </section>
-<section id="reviews">
 
-<h1 style="text-align:center;margin-bottom:40px;">Client Reviews</h1>
+</main>
 
-<div class="cards">
 
-<div class="card">
-<h2>⭐⭐⭐⭐⭐</h2>
-<p>Great work. Will work again.</p>
-<strong>- joya (ID)</strong>
-</div>
-
-<div class="card">
-<h2>⭐⭐⭐⭐⭐</h2>
-<p>My website rankings improved after using Rank SEO services.</p>
-<strong>- Sarah (UK)</strong>
-</div>
-
-<div class="card">
-<h2>⭐⭐⭐⭐⭐</h2>
-<p>Professional service with detailed reports. Highly recommended.</p>
-<strong>- Michael (Canada)</strong>
-</div>
-
-</div>
-
-</section>
-<section id="faq">
-
-<h1 style="text-align:center;margin-bottom:40px;">Frequently Asked Questions</h1>
-
-<div class="cards">
-
-<div class="card">
-<h2>❓ How long is delivery?</h2>
-<p>Delivery usually takes between 3 to 10 days depending on the package.</p>
-</div>
-
-<div class="card">
-<h2>📄 Do you provide reports?</h2>
-<p>Yes, every order includes a complete backlink report.</p>
-</div>
-
-<div class="card">
-<h2>🔗 Are backlinks permanent?</h2>
-<p>We focus on high-quality, long-lasting backlinks from trusted websites.</p>
-</div>
-
-<div class="card">
-<h2>💬 Can I request custom packages?</h2>
-<p>Yes! Contact us on WhatsApp or Telegram for a custom SEO package.</p>
-</div>
-
-</div>
-
-</section>
-<section id="stats">
-
-<h1 style="text-align:center;margin-bottom:40px;">Our Achievements</h1>
-
-<div class="cards">
-
-<div class="card">
-<h2>500+</h2>
-<p>Projects Completed</p>
-</div>
-
-<div class="card">
-<h2>300+</h2>
-<p>Happy Clients</p>
-</div>
-
-<div class="card">
-<h2>5+</h2>
-<p>Years Experience</p>
-</div>
-
-<div class="card">
-<h2>24/7</h2>
-<p>Customer Support</p>
-</div>
-
-</div>
-
-</section>
-<section id="contact" style="background:#111827;padding:60px 20px;text-align:center;">
-    <h2 style="color:#ff6b00;">📞 Contact Us</h2>
-
-    <p>📱 WhatsApp:
-        <a href="https://wa.me/923409843554" target="_blank">
-            +92 340 9843554
-        </a>
-    </p>
-
-    <p>📧 Email:
-        <a href="mailto:masterseoranker@gmail.com">
-            masterseoranker@gmail.com
-        </a>
-    </p>
-
-    <p>💬 Telegram:
-        <a href="https://t.me/Rankseo275" target="_blank">
-            @Rankseo275
-        </a>
-    </p>
-</section>
+<!-- ================= FOOTER ================= -->
 
 <footer>
-© 2026 Rank SEO | Premium PBN & Mix Backlink Services | All Rights Reserved
+
+<div class="container footer-row">
+
+<div>
+
+© <span id="year"></span>
+<b>Rank SEO</b>.
+All Rights Reserved.
+
+</div>
+
+<div>
+
+SEO Backlinks Specialist |
+Guest Post Expert
+
+</div>
+
+</div>
+
 </footer>
 
-<a href="https://wa.me/923409843554"
-target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;">
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="float-wa"
+href="https://wa.me/923409843554"
+target="_blank">
+
 💬 WhatsApp
+
 </a>
+
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
 
 </body>
 </html>
